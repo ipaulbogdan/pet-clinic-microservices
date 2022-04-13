@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.idorasi
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, data, data-jpa, gradle, http-client, jackson-databind, java, java-application, jdbc-hikari, liquibase, logback, lombok, micronaut-build, netty-server, postgres, readme, shade, spock, testcontainers, yaml]

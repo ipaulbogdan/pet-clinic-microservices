@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: clinicReviews
+  server:
+    port: 8082
+
+netty:
+  default:
+    allocator:
+      max-order: 3
+mongodb.uri: mongodb://vetReview:vetReview@${MONGO_HOST:localhost}:${MONGO_PORT:27017}/vet-review
