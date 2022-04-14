@@ -38,11 +38,10 @@ CREATE TABLE pets (
                       public_identifier uuid,
                       name character varying(30),
                       birth_date date,
-                      type_id integer NOT NULL,
+                      type varchar(80),
                       owner_id integer NOT NULL,
                       creation_datetime timestamp,
                       update_datetime timestamp,
-                      FOREIGN KEY (type_id) REFERENCES types (id),
                       FOREIGN KEY (owner_id) REFERENCES owners (id),
                       CONSTRAINT pk_pets PRIMARY KEY (id)
 );

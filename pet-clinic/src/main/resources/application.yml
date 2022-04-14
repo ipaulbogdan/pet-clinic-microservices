@@ -3,6 +3,30 @@ micronaut:
     name: petClinic
   server:
     port: 8081
+#  security:
+#    authentication: idtoken
+#    endpoints:
+#      login:
+#        enabled: true
+#    redirect:
+#      login-success: /secure/anonymous
+#    token:
+#      jwt:
+#        enabled: true
+#        signatures.jwks.keycloak:
+#              url: http://localhost:7080/auth/realms/master/protocol/openid-connect/certs
+#    oauth2:
+#      clients:
+#        keycloak:
+#          grant-type: password
+#          client-id: pet-clinic
+#          client-secret: 4e8d0c8c-5bc1-428a-8d44-530525af6d1
+#          authorization:
+#            url: http://localhost:7080/auth/realms/master/protocol/openid-connect/auth
+#          token:
+#            url: http://localhost:7080/auth/realms/master/protocol/openid-connect/token
+#            auth-method: client-secret-post
+
 
 
 mongodb:
