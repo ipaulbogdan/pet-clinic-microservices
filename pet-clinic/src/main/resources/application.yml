@@ -28,6 +28,17 @@ micronaut:
 #            auth-method: client-secret-post
 
 
+kafka:
+  bootstrap:
+    servers: localhost:9092
+
+
+log4j:
+  logger:
+    org:
+      apache:
+        kafka: WARN
+
 
 mongodb:
   uri: mongodb://petClinic:petClinic@${MONGO_HOST:localhost}:${MONGO_PORT:27017}/pet-clinic

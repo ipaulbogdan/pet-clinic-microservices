@@ -7,12 +7,15 @@ import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
+import io.micronaut.security.annotation.Secured;
+import io.micronaut.security.rules.SecurityRule;
 import lombok.AllArgsConstructor;
 
 import java.util.List;
 
 @Controller("/api/vet-reviews")
 @AllArgsConstructor
+@Secured(SecurityRule.IS_ANONYMOUS)
 public class VetReviewController {
 
     private VetReviewService vetReviewService;

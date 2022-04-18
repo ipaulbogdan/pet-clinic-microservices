@@ -10,18 +10,22 @@ micronaut:
 #        file: /certificate/cert.p12
 #      type: PKCS12
 #      password: ${CERT_PASS}
-  security:
-    authentication: idtoken
-    oauth2:
-      clients:
-        okta:
-          client-secret: MvSU1cx05pqoUIQSZfLJupUGbYMS3GL5eLGLdjrj
-          client-id: 0oa4nw563lx9sv8Tm5d7
-          openid:
-            issuer: https://dev-29926649.okta.com/oauth2/default
-    endpoints:
-      logout:
-        get-allowed: true
+#  security:
+#    authentication: idtoken
+#    oauth2:
+#      clients:
+#        okta:
+#          client-secret: MvSU1cx05pqoUIQSZfLJupUGbYMS3GL5eLGLdjrj
+#          client-id: 0oa4nw563lx9sv8Tm5d7
+#          openid:
+#            issuer: https://dev-29926649.okta.com/oauth2/default
+#    endpoints:
+#      logout:
+#        get-allowed: true
+
+kafka:
+  bootstrap:
+    servers: localhost:9092
 
 netty:
   default:
